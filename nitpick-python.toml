@@ -6,7 +6,6 @@ minimum_version = "0.21.0"
 include = [
     "py://nitpick/resources/any/pre-commit-hooks",
     "prettier.toml",
-
     "base.toml",
     "files.toml",
     "editorconfig.toml",
