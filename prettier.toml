@@ -9,4 +9,4 @@ repo = "https://github.com/pre-commit/mirrors-prettier"
 id = "prettier"
 stages = ["commit"]
 additional_dependencies = ["prettier-plugin-toml", "@prettier/plugin-xml", "prettier-plugin-sh"]
-exclude = "^(.idea/.*|CHANGELOG.md)"
+#exclude = "^(.idea/.*|CHANGELOG.md)"
