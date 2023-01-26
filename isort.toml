@@ -1,0 +1,19 @@
+[nitpick.meta]
+name = "Isort"
+
+["pyproject.toml".tool.isort]
+
+profile = "black"
+skip_gitignore = true
+line_length = 88
+indent = '    '
+multi_line_output = 3
+skip = 'env'
+include_trailing_comma = true
+combine_as_imports = true
+force_grid_wrap = 0
+
+[[".pre-commit-config.yaml".repos]]
+repo = "https://github.com/pycqa/isort"
+hooks = [{ id = "isort" }]
+

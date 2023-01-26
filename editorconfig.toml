@@ -1,0 +1,32 @@
+[nitpick.meta]
+name = "EditorConfig"
+url = "http://editorconfig.org/"
+
+[".editorconfig"]
+# top-most EditorConfig file
+root = true
+
+[".editorconfig"."*"]
+# Unix-style newlines with a newline ending every file
+end_of_line = "lf"
+charset = "utf-8"
+insert_final_newline = true
+indent_style = "space"
+indent_size = 4
+
+# Whitespace at the end of lines
+trim_trailing_whitespace = true
+
+# Matches multiple files with brace expansion notation
+# Set default charset
+[".editorconfig"."{*.js,*json}"]
+indent_size = 2
+
+[".editorconfig"."{*.yaml,*.yml}"]
+indent_size = 2
+
+[".editorconfig".Makefile]
+indent_style = "tab"
+#
+#[".codeclimate.yml".plugins.editorconfig]  # https://docs.codeclimate.com/docs/editorconfig
+#enabled = true

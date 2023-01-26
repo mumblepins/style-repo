@@ -1,0 +1,31 @@
+[nitpick.meta]
+name = "Black"
+url = "https://github.com/psf/black"
+
+["pyproject.toml".tool.black]
+line-length = 100
+include = '\.pyi?$'
+target-version = ['py39']
+exclude = '''
+/(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | \.cache
+  | env
+  | venv
+  | \.aws-sam
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[[".pre-commit-config.yaml".repos]]
+repo = "https://github.com/ambv/black"
+hooks = [{ id = "black", language_version = "python3" }]
+
