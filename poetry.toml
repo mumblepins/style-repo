@@ -1,0 +1,15 @@
+[nitpick.meta]
+name = "Poetry"
+url = "https://github.com/python-poetry/poetry"
+
+["pyproject.toml".build-system]
+requires = ["poetry-core>=1.2.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[".pre-commit-config.yaml".repos]]
+repo = "https://github.com/python-poetry/poetry"
+
+[[".pre-commit-config.yaml".repos.hooks]]
+id = "poetry-lock"
+args = ["--check"]
+files = "(pyproject.toml|poetry.lock)"

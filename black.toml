@@ -28,4 +28,3 @@ exclude = '''
 [[".pre-commit-config.yaml".repos]]
 repo = "https://github.com/ambv/black"
 hooks = [{ id = "black", language_version = "python3" }]
-

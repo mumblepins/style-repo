@@ -1,15 +1,16 @@
 [nitpick]
 minimum_version = "0.21.0"
 
-["pyproject.toml".tool.black]
 [nitpick.styles]
 include = [
-    "py://nitpick/resources/any/pre-commit-hooks",
-    "prettier.toml",
-    "base.toml",
-    "files.toml",
-    "editorconfig.toml",
-    "black.toml",
-    "isort.toml",
-    "flake8.toml"
+  "py://nitpick/resources/any/pre-commit-hooks",
+  "prettier.toml",
+  "base.toml",
+  "files.toml",
+  "editorconfig.toml",
+  "black.toml",
+  "bandit.toml",
+  "isort.toml",
+  "flake8.toml",
+  "poetry.toml"
 ]

@@ -1,0 +1,22 @@
+[nitpick.meta]
+name = "Bandit"
+url = "https://github.com/psf/black"
+
+["pyproject.toml".tool.bandit]
+skips = []
+
+[[".pre-commit-config.yaml".repos]]
+repo = "https://github.com/PyCQA/bandit"
+
+[[".pre-commit-config.yaml".repos.hooks]]
+id = "bandit"
+additional_dependencies = ["toml"]
+args = [
+  "-c",
+  "pyproject.toml",
+  "-f",
+  "custom",
+  "-q",
+  "--msg-template",
+  "{abspath}:{line}: {test_id}: Severe-{severity}/Conf-{confidence}: {msg}"
+]

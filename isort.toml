@@ -2,7 +2,6 @@
 name = "Isort"
 
 ["pyproject.toml".tool.isort]
-
 profile = "black"
 skip_gitignore = true
 line_length = 88
@@ -16,4 +15,3 @@ force_grid_wrap = 0
 [[".pre-commit-config.yaml".repos]]
 repo = "https://github.com/pycqa/isort"
 hooks = [{ id = "isort" }]
-

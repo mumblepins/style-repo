@@ -6,6 +6,5 @@
 [nitpick.files.present]
 "pyproject.toml" = "Install poetry and run 'poetry init' to create it"
 ".editorconfig" = "A project should have an editor configuration"
-
 "README.md" = "A project should have `README.md`"
 ".gitignore" = "A project should have `.gitignore` file"
