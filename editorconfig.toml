@@ -31,5 +31,5 @@ indent_size = 2
 [".editorconfig".Makefile]
 indent_style = "tab"
 
-[".editorconfig"."{*.pyw,*.pyw}"]
+[".editorconfig"."{*.py,*.pyw}"]
 ij_visual_guides = "80, 100"
