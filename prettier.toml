@@ -8,6 +8,7 @@ repo = "https://github.com/pre-commit/mirrors-prettier"
 [[".pre-commit-config.yaml".repos.hooks]]
 id = "prettier"
 additional_dependencies = [
+  "prettier",
   "prettier-plugin-toml",
   "@prettier/plugin-xml",
   "prettier-plugin-sh",
