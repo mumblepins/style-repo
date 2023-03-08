@@ -3,3 +3,5 @@ repo = "https://github.com/andreoliwa/nitpick"
 
 [[".pre-commit-config.yaml".repos.hooks]]
 id = "nitpick"
+# fix for breaking change in requests-cache
+additional_dependencies = ["requests-cache<1.0"]
