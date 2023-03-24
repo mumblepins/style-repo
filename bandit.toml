@@ -10,7 +10,7 @@ repo = "https://github.com/PyCQA/bandit"
 
 [[".pre-commit-config.yaml".repos.hooks]]
 id = "bandit"
-additional_dependencies = ["toml"]
+additional_dependencies = ["bandit[toml]"]
 args = [
   "-c",
   "pyproject.toml",
