@@ -5,7 +5,6 @@ url = "https://github.com/psf/black"
 ["pyproject.toml".tool.black]
 line-length = 100
 include = '\.pyi?$'
-target-version = ['py39']
 exclude = '''
 /(
       \.eggs         # exclude a few common directories in the
