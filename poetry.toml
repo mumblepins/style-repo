@@ -10,6 +10,5 @@ build-backend = "poetry.core.masonry.api"
 repo = "https://github.com/python-poetry/poetry"
 
 [[".pre-commit-config.yaml".repos.hooks]]
-id = "poetry-lock"
-args = ["--check"]
+id = "poetry-check"
 files = "(pyproject.toml|poetry.lock)"
